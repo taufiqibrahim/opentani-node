@@ -1,0 +1,13 @@
+{
+  "name": "opentani-node",
+  "main": "server.js",
+  "dependencies": {
+    "bcrypt": "^0.8.7",
+    "body-parser": "^1.15.2",
+    "express": "^4.9.8",
+    "jsonwebtoken": "^7.1.9",
+    "morgan": "^1.7.0",
+    "pg": "^6.1.0",
+    "sequelize": "^3.24.8"
+  }
+}
