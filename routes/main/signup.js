@@ -15,7 +15,7 @@ router.post('/signup', function(req, res) {
 		var token = middleware.createToken(user);
 		res.json({
 			status: 200,
-			text: "User created",
+			text: "OK",
 			user,
 			token
 		});
@@ -23,7 +23,7 @@ router.post('/signup', function(req, res) {
 	.catch(Sequelize.ValidationError, function(err) {
 		res.json({
 			status: 400,
-			text: "Error",
+			text: "Bad Request",
 			error: err.errors[0]
 		})
 	});
