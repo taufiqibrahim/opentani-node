@@ -29,7 +29,7 @@ signup.use('/signup', (req, res) => {
 		phone_number: phone_number,
 		email: email,
 		password: req.body.password,
-		hashed_pw: req.body.password
+		hashed_pw: req.body.password	//This line added because the model only recognize hashed_pw NOT password.
 	})
 	.then(function(user) {
 		let token = middleware.createToken(user);
